@@ -44,7 +44,7 @@
 
 - (id)initWithFrame:(CGRect)frame
 {
-	if ((self = [super initWithFrame: CGRectZero]))
+	if ((self = [super initWithFrame:frame]))
 	{
 		self.backgroundColor = [UIColor clearColor] ;
 	}
@@ -225,7 +225,7 @@
 	[self setNeedsDisplay] ;
 }
 
-- (void)setFrame:(CGRect)aFrame
+/*- (void)setFrame:(CGRect)aFrame
 {
 	// we do not allow the caller to modify the size struct in the frame so we compute it
 	aFrame.size = [self sizeForNumberOfPages: numberOfPages] ;
@@ -237,7 +237,7 @@
 	// we do not allow the caller to modify the size struct in the bounds so we compute it
 	aBounds.size = [self sizeForNumberOfPages: numberOfPages] ;
 	super.bounds = aBounds ;
-}
+}*/
 
 
 
